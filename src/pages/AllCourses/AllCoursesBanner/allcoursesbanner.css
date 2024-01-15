@@ -1,0 +1,64 @@
+.allcourses_banner_comp {
+  min-height: 40vh;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+  position: relative;
+  background-color: #f0f0f0;
+  /* background-color: var(--main-color); */
+  background-image: linear-gradient(to right, rgb(242, 112, 156), rgb(255, 148, 114));
+}
+
+.allcourses_banner_comp .page_name {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  color: var(--main-color);
+  color: white;
+
+}
+
+.allcourses_banner_comp .page_name h4 {
+  font-size: 50px;
+  font-weight: 700;
+}
+
+.courses_type select {
+  width: 500px !important;
+  max-width: 100%;
+  margin: auto;
+  margin-bottom: 10px !important;
+}
+
+.courses_type {
+  position: absolute;
+  bottom: 0px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.courses_type h5 {
+  cursor: pointer;
+  transition: .3s all ease-in-out;
+}
+
+.courses_type h5.active {
+  border-bottom: 2px solid var(--main-color);
+  color: red;
+}
+
+
+@media (max-width:992px) {
+  .courses_type {
+    margin: auto;
+  }
+
+  .courses_type select {
+    width: 90% !important;
+    margin: auto;
+    margin-bottom: 10px !important;
+  }
+}

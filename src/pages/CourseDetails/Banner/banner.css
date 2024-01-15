@@ -1,0 +1,72 @@
+.course_banner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  min-height: 60vh;
+  margin-bottom: 10px;
+  background-image: linear-gradient(to right, rgb(242, 112, 156), rgb(255, 148, 114));
+  padding: 10px;
+  border-radius: 10px;
+  color: white;
+  justify-content: center;
+}
+
+.course_banner .left,
+.course_banner .right {
+  width: 48%;
+}
+
+.course_banner .left h5 {
+  font-size: 40px;
+  font-weight: 700;
+}
+
+.course_banner .left p {
+  font-size: 20px;
+  margin: 20px 0px;
+  font-weight: 400;
+}
+
+.course_banner .left h6 {
+  font-size: 22px;
+  font-weight: 900;
+}
+
+.course_banner .right img {
+  max-width: 100%;
+}
+
+@media (max-width:992px) {
+  .course_banner .right {
+    order: -1;
+    text-align: center;
+  }
+
+  .course_banner .right img {
+    width: 300px;
+  }
+
+  .course_banner .left,
+  .course_banner .right {
+    width: 100%;
+    text-align: center;
+  }
+}
+
+@media (max-width:767px) {
+  .course_banner .left h5 {
+    font-size: 30px;
+  }
+
+  .course_banner .left p {
+    font-size: 17px;
+    margin: 20px 0px;
+    font-weight: 400;
+  }
+
+  .course_banner .left h6 {
+    font-size: 20px;
+    font-weight: 900;
+  }
+}

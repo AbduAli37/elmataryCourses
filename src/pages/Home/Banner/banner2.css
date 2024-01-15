@@ -1,0 +1,116 @@
+.banner2 {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  padding: 10px 30px;
+  justify-content: center;
+  overflow-x: hidden;
+  min-height: 80vh;
+  padding-top: 30px;
+  margin-bottom: 90px;
+  /* background-image: linear-gradient(to right, rgb(242, 112, 156), rgb(255, 148, 114)); */
+}
+
+.banner2 h4 {
+  font-size: 70px;
+  margin-bottom: 30px;
+  animation-name: fadeInUp;
+  color: var(--main-color);
+}
+
+.banner2 h3 {
+  font-size: 35px;
+  margin-bottom: 20px;
+}
+
+.banner2 .left p {
+  color: #587a86;
+  font-size: 18px;
+  margin-bottom: 20px;
+}
+
+.banner2 .right {
+  width: 48%;
+}
+
+.banner2 .left {
+  width: 48%;
+}
+
+.banner2 .right img {
+  max-width: 100%;
+}
+
+.banner2 .actions {
+  display: flex;
+  align-items: center;
+  /* justify-content: center; */
+  gap: 10px;
+}
+
+.banner2 .actions button {
+  border: none;
+  padding: 10px;
+  width: 100px;
+  border-radius: 4px;
+  text-transform: capitalize;
+  border: 2px solid transparent;
+}
+
+.banner2 .actions button:first-of-type {
+  background-color: var(--main-color);
+  color: white;
+  transition: .3s all ease-in-out;
+  border-color: var(--main-color);
+}
+
+.banner2 .actions button:first-of-type:hover {
+  color: var(--main-color);
+  background-color: white;
+  transition: .3s all ease-in-out;
+}
+
+.banner2 .actions button:nth-child(2) {
+  color: var(--main-color);
+  border-color: var(--main-color);
+  background-color: transparent;
+}
+
+.banner2 .actions button:nth-child(2):hover {
+  background-color: var(--main-color);
+  color: white;
+  border-color: transparent;
+}
+
+@media (max-width:1200px) {
+  .banner2 h4 {
+    font-size: 45px;
+  }
+}
+
+@media (max-width:992px) {
+  .banner2 .right {
+    width: 100%;
+    order: -1;
+    text-align: center;
+  }
+
+  .banner2 h4 {
+    font-size: 30px !important;
+  }
+
+  .banner2 .left {
+    width: 100%;
+    text-align: center;
+  }
+
+  .banner2 .actions {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+  }
+}
+
+@media (max-width:767px) {}

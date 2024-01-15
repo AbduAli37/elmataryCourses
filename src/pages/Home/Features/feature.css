@@ -1,0 +1,102 @@
+.features {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+  margin-top: 20px;
+  overflow: hidden;
+  margin-bottom: 20px;
+  padding-bottom: 50px;
+  padding-top: 20px;
+  padding: 20px;
+}
+
+.features .feature {
+  width: 300px;
+  height: 250px;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+  cursor: pointer;
+  transition: .2s all ease-in-out;
+  border-radius: 10px;
+}
+
+.features .feature:hover,
+.features .feature:hover,
+.features .feature:hover {
+  background-color: var(--main-color);
+  box-shadow: var(--second-color) 0px 1px 4px;
+}
+
+.features .feature .feature,
+.features .feature .feature,
+.features .feature .feature {
+  width: 100%;
+}
+
+.features .feature {
+  color: black;
+  padding: 10px 5px;
+  text-align: center;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.features .feature img {
+  width: 100px;
+  max-width: 100%;
+}
+
+.features .feature h4 {
+  /* color: #587a86; */
+  color: var(--main-color);
+}
+
+.features .feature p {
+  color: #30a79d;
+  color: #587a86;
+}
+
+.features .feature:hover h4,
+.features .feature:hover p,
+.features .feature:hover h4,
+.features .feature:hover p,
+.features .feature:hover h4,
+.features .feature:hover p {
+  color: white;
+}
+
+
+@media (max-width:992px) {
+
+  .features .feature,
+  .features .feature {
+    width: 30%;
+  }
+}
+
+@media (max-width:767px) {
+
+  .features .feature,
+  .features .feature {
+    width: 47% !important;
+  }
+
+  .features .feature:nth-child(1) {
+    order: 99;
+    width: 47% !important;
+  }
+}
+
+@media (max-width:565px) {
+
+  .features .feature,
+  .features .feature:nth-child(1) {
+    width: 100% !important;
+  }
+
+
+}

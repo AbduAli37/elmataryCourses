@@ -1,0 +1,129 @@
+.courses_component {
+  padding-bottom: 20px;
+  width: 1300px;
+  max-width: 100%;
+  margin: auto;
+  margin-top: 40px;
+  padding: 20px;
+}
+
+.courses_component>h4 {
+  text-align: center;
+  margin-bottom: 30px;
+  font-size: 30px;
+  color: var(--main-color);
+  font-weight: 700;
+}
+
+.courses {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  row-gap: 40px;
+  width: 100%;
+}
+
+.courses .course {
+  width: 300px;
+  /* border: 1px solid #ccc; */
+}
+
+.course_image {
+  border-radius: 10px;
+  overflow: hidden;
+  height: 200px;
+  position: relative;
+}
+
+.course_image svg {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  z-index: 99;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+  cursor: pointer;
+  font-size: 22px;
+}
+
+.course_image svg.loved {
+  color: red;
+}
+
+.courses .course img {
+  max-width: 100%;
+  max-height: 100%;
+  min-width: 100%;
+}
+
+.courses .course .course_descripiton {
+  padding: 20px;
+  background-color: white;
+  width: 90%;
+  margin: auto;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+  margin-top: -40px;
+  z-index: 99;
+  position: relative;
+  height: 200px;
+  border-radius: 10px;
+  transition: .3s all ease-in-out;
+  cursor: pointer;
+}
+
+.courses .course .course_descripiton:hover {
+  background-color: var(--main-color);
+}
+
+.course .course_descripiton h3 {
+  font-size: 24px;
+  text-align: center;
+  color: var(--main-color);
+  /* margin-bottom: 20px; */
+  font-weight: 700;
+
+}
+
+.course .course_descripiton h5 {
+  font-size: 19px;
+  text-align: center;
+  margin-bottom: 50px;
+  color: var(--second-color);
+  color: #441;
+}
+
+.course .course_descripiton>p {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  position: absolute;
+  bottom: 0px;
+}
+
+.course .course_descripiton>p img {
+  width: 20px;
+}
+
+.courses .course .course_descripiton:hover>* {
+  color: white;
+}
+
+.courses .course .course_descripiton h5 {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+}
+
+@media (max-width:992px) {
+  .courses {
+    justify-content: space-around;
+  }
+}
+
+@media (max-width:767px) {
+  .course {
+    margin: auto;
+  }
+}

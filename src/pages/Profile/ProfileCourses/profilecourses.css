@@ -1,0 +1,141 @@
+.profile_courses_page {
+  margin-top: 40px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.profile_courses_page .course {
+  display: flex;
+  align-items: start;
+  gap: 10px;
+  background-color: #f3f3f3;
+  margin-bottom: 10px;
+  padding: 10px;
+  border-radius: 14px;
+  /* align-items: center; */
+  flex-wrap: wrap;
+  width: 500px;
+  width: 49%;
+  margin: 20px auto;
+  max-width: 100%;
+  cursor: pointer;
+}
+
+.course .left {
+  width: 100px;
+  height: 100px;
+}
+
+.course .left img {
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+}
+
+.course .right {
+  width: calc(100% - 200px);
+}
+
+.course .right h5 {
+  font-size: 17px;
+  color: var(--main-color);
+  padding: 4px 10px;
+  background-color: #fefefe;
+  width: fit-content;
+  border-radius: 4px;
+}
+
+.course .right h2 {
+  font-size: 22px;
+  color: #222;
+  font-weight: 700;
+}
+
+.course .right h3 {
+  font-size: 17px;
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+
+.compelete_ratio {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  flex-wrap: wrap;
+  width: 100%;
+}
+
+.compelete_ratio>div {
+  /* flex: 1; */
+  background-color: #dedefe;
+  border-radius: 10px;
+  /* padding: 2px; */
+  width: 200px;
+  max-width: 100%;
+  height: 10px;
+}
+
+@media (max-width:767px) {
+  .profile_courses_page .course {
+    flex-direction: column;
+  }
+
+  .course .left {
+    width: 100%;
+  }
+
+  .course .left img {
+    width: 100%;
+  }
+
+  .course .right {
+    width: 100%;
+  }
+
+  .compelete_ratio {
+    justify-content: center;
+  }
+
+  .course .right h5 {
+    text-align: center;
+    margin: auto;
+  }
+
+  .course .right h2 {
+    text-align: center;
+  }
+
+  .course .right h3 {
+    justify-content: center;
+  }
+}
+
+@media (max-width:565px) {
+  .profile_courses_page .course {
+    width: 100%;
+  }
+
+  .course .right {
+    display: flex !important;
+    flex-direction: column !important;
+    justify-content: space-around !important;
+    justify-content: space-between !important;
+    /* flex: 1; */
+  }
+
+  .course .right h2 {
+    font-size: 20px;
+  }
+
+  .course .right h3 {
+    justify-content: center;
+  }
+}
+
+@media (max-width:200px) {
+  .profile_courses_page .course {
+    width: 100%;
+  }
+}

@@ -1,0 +1,37 @@
+.profileunits_page {
+  /* margin-top: 60px; */
+  /* padding: 20px; */
+  margin-bottom: 20px;
+}
+
+.profileunits_page .unite_topics {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  width: 500px;
+  max-width: 90%;
+  margin: auto;
+  padding: 10px;
+  border-radius: 10px;
+  background-color: #dedede;
+}
+
+.profileunits_page .unite_topics .unit_topic {
+  cursor: pointer;
+  font-size: 20px;
+  color: #555;
+  border-bottom: 2px solid transparent;
+  transition: .3s all ease-in-out;
+  padding: 4px 10px;
+}
+
+.profileunits_page .unite_topics .unit_topic.active {
+  color: var(--main-color);
+  border-bottom: 2px solid var(--main-color);
+}
+
+@media (max-width:767px) {
+  .profileunits_page {
+    margin-bottom: 70px;
+  }
+}
